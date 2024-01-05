@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahoron</title>
+    <link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet" href="styleslide.css">
+    <script src=http://connect.soundcloud.com/sdk.js></script>
+    <script src="https://kit.fontawesome.com/03ca44ad11.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="/eel.js"></script>
+    <script src="script.js"></script>
+    <script type="text/javascript" src="/scriptex.js"></script>
+    <script type="text/javascript" src="/player2scriptex.js"></script>
+    <script>
+        window.onload = init()
+    </script>
+
+</head>
+
+<body>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="sidecontent">
+            <h1>Mahoron</h1>
+            <br>
+            <ul>
+                <li><button onclick="Overlay()">Splice</button></li>
+            </ul>
+
+            <container class="microcrop2">
+                <h3>Offset:</h3>
+                <input id="offset" type=text class="microcrop2" style="padding: 10%" value="1000" input>
+            </container>
+
+        </div>
+    </div>
+
+    <!-- Use any element to open the sidenav -->
+    <button onclick="openNav()" id="playlist"><i class="fas fa-music fa-lg"></i></button>
+
+
+    <div class="container">
+        <div class="leftdiv2">
+            <div class="leftdiv">
+
+                <h1 id="songTitle">Title</h1>
+
+                <div class="rangediv">
+                    <span id="current-time" class="time">00:00</span>
+                    <section class="range-slider">
+
+                        <input id="seekslider1" value="5" min="0" max="15" step="1" type="range"
+                            onchange="p1max(this.value)">
+                        <input id="seekslider2" value="0" min="0" max="15" step="1" type="range"
+                            onchange="slidevalue(this.value)">
+
+                    </section>
+                    <span id="duration" class="time">00:00</span>
+                </div>
+
+
+                <div class="buttons">
+                    <button id="pre" onclick="jsPlayPrevious()"><i class="fas fa-step-backward fa-lg"></i></button>
+                    <button id="play" onclick="jsPlayPause()"><i id="playpause" class="fas fa-play fa-lg"></i></button>
+                    <button id="next" onclick="jsPlayNext()"><i class="fas fa-step-forward fa-lg"></i></button>
+                </div>
+
+                <h1 id="songTitle2">Title 2</h1>
+
+                <div class="rangediv">
+                    <span id="current-time2" class="time">00:00</span>
+                    <section class="range-slider">
+                        <span class="rangeValues"></span>
+                        <input id="seekslider3" value="5" min="0" max="15" step="0.5" type="range"
+                            onchange="p2max(this.value)">
+                        <input id="seekslider4" value="0" min="0" max="15" step="0.5" type="range"
+                            onchange="slidevalue2(this.value)">
+                    </section>
+                    <span id="duration2" class="time">00:00</span>
+                </div>
+
+
+                <div class="buttons">
+                    <button id="pre" onclick="jsPlayPrevious2()"><i class="fas fa-step-backward fa-lg"></i></button>
+                    <button id="play" onclick="jsPlayPause2()"><i id="playpause2"
+                            class="fas fa-pause fa-lg"></i></button>
+                    <button id="next" onclick="jsPlayNext2()"><i class="fas fa-step-forward fa-lg"></i></button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- <script src="main.js"></script> -->
+    <p>Version 2.1</p>
+</body>
+
+</html>

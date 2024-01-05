@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahoron</title>
+    <link rel="stylesheet" href="style2.css">
+    <script src=http://connect.soundcloud.com/sdk.js></script>
+    <script src="https://kit.fontawesome.com/03ca44ad11.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="/eel.js"></script>
+    <script type="text/javascript">
+        // window.onload = jsStartUp;
+        let isPlaying = true;
+
+        function jsStartUp() {
+            eel.StartUp();
+            isPlaying = true;
+        }
+
+        function jsPlayNext() {
+            eel.nextTrack();
+            document.getElementById("playpause").className = "fas fa-pause fa-lg";
+        }
+
+        function jsPlayPrevious() {
+            eel.previousTrack();
+            document.getElementById("playpause").className = "fas fa-pause fa-lg";
+        }
+
+
+        function jsPlayPause() {
+
+            eel.PlayPause();
+            if (!isPlaying) {
+                isPlaying = true;
+                document.getElementById("playpause").className = "fas fa-pause fa-lg";
+            }
+            else {
+                isPlaying = false;
+                document.getElementById("playpause").className = "fas fa-play fa-lg";
+            }
+        }
+
+
+       
+
+
+        /* Set the width of the side navigation to 250px */
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        /* Set the width of the side navigation to 0 */
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+
+        function Megu() {
+            document.getElementById("animegif").src = "megu.gif";
+        }
+
+        function Chika() {
+            document.getElementById("animegif").src = "chika.gif";
+        }
+
+        function Zerotwo() {
+            document.getElementById("animegif").src = "zerotwo.gif";
+        }
+
+        eel.expose(rename);
+        function rename(title) {
+            title = title.replace('.mp3', '');
+            document.getElementById("songTitle").innerHTML = title;
+        }
+
+
+    </script>
+
+</head>
+
+<body>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="sidecontent">
+            <h1>Mahoron</h1>
+            <br>
+            <ul>
+                <li><button onclick="Megu()">Megumin</button></li>
+                <li><button onclick="Zerotwo()">Zero Two</button></li>
+                <li><button onclick="Chika()">Chika</button></li>
+            </ul>
+
+        </div>
+
+
+    </div>
+
+    <!-- Use any element to open the sidenav -->
+    <button onclick="openNav()" id="playlist"><i class="fas fa-music fa-lg"></i></button>
+
+    <div class="container">
+        <div class="leftdiv">
+            <div class="textdiv">
+                <h1 id="songTitle">Title</h1>
+            </div>
+
+
+
+            <div class="buttons">
+                <button id="pre" onclick="jsPlayPrevious()"><i class="fas fa-step-backward fa-lg"></i></button>
+                <button id="play" onclick="jsPlayPause()"><i id="playpause" class="fas fa-pause fa-lg"></i></button>
+                <button id="next" onclick="jsPlayNext()"><i class="fas fa-step-forward fa-lg"></i></button>
+            </div>
+
+        </div>
+
+        <img id="animegif" src="megu.gif">
+
+    </div>
+    <!-- <script src="main.js"></script> -->
+    <p>Version 2.1</p>
+</body>
+
+</html>
