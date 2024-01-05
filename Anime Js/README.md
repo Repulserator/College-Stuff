@@ -4,7 +4,11 @@ This was meant as a learning project to learn [Anime Js](https://animejs.com/).
 They also have one of the prettiest documentations.\
 Cheers!
 
+![Video thumbnail](assets/gitang.mp4)
 
+### Instructions
+
+It should work straight out of the box...
 
 ### References
 
