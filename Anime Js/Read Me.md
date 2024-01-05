@@ -9,4 +9,4 @@ Cheers!
 ### References
 
 Used the player from Hassan Corrigan <github@hassancorrigan.com> from [soundcloud player](https://github.com/HassanCorrigan/soundcloud-player)
-\Was especially find of the waveform used.
+\ Was especially find of the waveform used.
