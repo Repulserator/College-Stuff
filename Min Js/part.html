@@ -1,0 +1,123 @@
+<html>
+
+<head>
+  <audio id="my_audio" src="MitiS - Reconnect (feat. MaHi).mp3" loop="loop"></audio>
+  <script>
+    window.onclick = function() {
+      document.getElementById("my_audio").play();
+      document.getElementById("my_audio").volume = 0.1;
+    }
+  </script>
+  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+  <script src="particles.min.js" defer="defer"></script>
+  <script src="app.js" defer="defer"></script>
+  <script src="rule.js"></script>
+
+  <link rel="stylesheet" href="part.css">
+
+  <style>
+    e {
+      display: block
+    }
+
+    .f {
+      border-radius: 10%;
+      background-color: #F5F5F5;
+      box-shadow: 0 2px 5px rgbo(0, 0, 0, 0.3);
+      overflow: hidden;
+      position: fixed;
+      top: 25%;
+      left: 35%;
+      right: 35%;
+    }
+
+    .inp:hover {
+      background-color: #e2e2e2;
+    }
+    .inp2:hover {
+      background-color: #e2e2e2;
+    }
+
+    .b {
+      padding: 0;
+      font-family: 'Poppins';
+      font-size: 29px;
+      top: 50%;
+
+
+    }
+
+    .inp {
+      border-top-left-radius: 10%;
+      border-top-right-radius: 10%;
+      top: 50%;
+      padding-top: -50%;
+      padding-left: 10px;
+      transition: 1.5s ease;
+      font-size: 22px;
+      background-color: #F5F5F5;
+      border: none;
+      size: 29px;
+      width: 225px;
+      height: 50px;
+      border-bottom: 2px solid #152238;
+    }
+    .inp2 {
+      border-top-left-radius: 10%;
+      border-top-right-radius: 10%;
+      top: 50%;
+      padding-top: -50%;
+      padding-left: 10px;
+      transition: 1.5s ease;
+      font-size: 22px;
+      background-color: #F5F5F5;
+      border: none;
+      size: 29px;
+      width: 225px;
+      height: 50px;
+      border-bottom: 3px solid #b30000;
+    }
+
+    button:focus {outline:0;}
+    .inp2:focus {outline:0;}
+    .inp:focus {outline:0;}
+    .btn:focus {outline:0;}
+
+    .btn {
+      transition: 1s ease;
+      border-radius: 10%;
+      font-family: 'Poppins';
+      font-size: 23px;
+      background-color: white;
+      color: black;
+      border: 2px solid #152238;
+      padding: 6px;
+    }
+
+    .btn:hover {
+      background-color: #152238;
+      color: #ffffff;
+    }
+  </style>
+
+</head>
+
+
+<!-- particles.js container -->
+<div id="particles-js"></div>
+<div id=forma>
+  <center>
+    <br /><br />
+    <form class=f name=f1>
+      <p class=b>Username</p>
+      <input class=inp type="text" name="uid">
+      <p class=b>Password</p>
+      <input class=inp type="password" id="en" name="pwd" onblur="vpass()">
+      <p></br></p>
+      <input onclick="verify(); return false" name="Submit" class="btn" type="button" value="Submit" style=margin-right:20px;>
+      <input class="btn" type="reset">
+      <p></br></p>
+    </form>
+  </center>
+</div>
+</html>

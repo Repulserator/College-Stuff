@@ -1,0 +1,73 @@
+<html>
+
+<head>
+
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+
+  <style>
+    p {
+      color: white;
+      opacity: 50%;
+      font-family: Montserrat;
+    }
+
+    body {
+      background-color: white;
+    }
+
+    h1 {
+      font-size: 30px;
+      color: white;
+      border-radius: 1em;
+      padding: 1em;
+      position: absolute;
+      top: 43%;
+      left: 50%;
+      margin-right: -50%;
+      transform: translate(-50%, -50%);
+      font-family: Montserrat;
+
+    }
+
+    h1 {
+      animation-delay: 2s;
+      animation: big ease-out 1s;
+      animation-fill-mode: forwards;
+      font-size: 40px;
+    }
+
+    body {
+      animation: fadeInAnimation ease-out 1.3s;
+      animation-fill-mode: forwards;
+    }
+
+    @keyframes fadeInAnimation {
+      0% {
+        opacity: 0;
+        background-color: white;
+      }
+
+      100% {
+        opacity: 1;
+        background-color: black;
+      }
+    }
+
+    @keyframes big {
+      0% {}
+
+      100% {
+        font-size: 50px;
+      }
+    }
+  </style>
+
+</head>
+
+
+<body>
+  <h1>Welcome</h1>
+  <p>TOG</p>
+</body>
+
+</html>
