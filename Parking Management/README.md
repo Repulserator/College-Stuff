@@ -6,22 +6,22 @@ For a college project, my team used NetBeans and Java to build an app that track
 
 #### Preview 
 
-![picture 1](./Pictures/pic1.png)
+![picture 1](./pictures/pic1.png)
 <br></br>
-![picture 2](./Pictures/pic2.png)
+![picture 2](./pictures/pic2.png)
 <br></br>
-![picture 3](./Pictures/pic3.png)
+![picture 3](./pictures/pic3.png)
 <br></br>
 Updates Dynamically
-![picture 4](./Pictures/pic4.png)
+![picture 4](./pictures/pic4.png)
 <br></br>
 Future QR implementation here
-![picture 5](./Pictures/pic5.png)
+![picture 5](./pictures/pic5.png)
 <br></br>
 Fare is calculated based on current time
-![picture 6](./Pictures/pic6.png)
+![picture 6](./pictures/pic6.png)
 <br></br>
-![picture 7](./Pictures/pic7.png)
+![picture 7](./pictures/pic7.png)
 
 
 
